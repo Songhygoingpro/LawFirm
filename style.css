@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
+
+body {
+  font-family: "Catamaran", sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #e8e8e8;
+  z-index: -1;
+}
+
+.hero {
+  background-image: url("./img/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 72px);
+}
+
+.section-title {
+position: relative;
+display: flex;
+}
+
+.section-title p {
+    position: absolute;
+    top:1.5rem;
+    left: 4rem;
+    color: #474747;
+}
+
+.section-title h1 {
+    font-size: 40px;
+    font-weight: 600 ;
+    color: #4BA3D6;
+    letter-spacing: 5px;
+}
+
+.section-title h1 span {
+    font-size: 77px;
+}
