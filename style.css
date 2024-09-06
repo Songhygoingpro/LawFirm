@@ -10,6 +10,35 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  position: relative;
+  z-index: 1;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #e8e8e8;
+  z-index: -1;
+}
+
+.hero {
+  background-image: url("./img/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 72px);
+}
+
+input,
+textarea:focus {
+  outline: none;
+}
 
 /*navigation drawer*/
 .nav-menu ul {
@@ -89,36 +118,7 @@ body {
   transform: translateY(-5px) rotate(-45deg);
 }
 
-main {
-  position: relative;
-  z-index: 1;
-}
-
-main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #e8e8e8;
-  z-index: -1;
-}
-
-.hero {
-  background-image: url("./img/hero.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: calc(100vh - 72px);
-}
-
-input,
-textarea:focus {
-  outline: none;
-}
-
+/*timeline dot*/
 .timeline {
   position: relative;
   margin: 0 auto;
