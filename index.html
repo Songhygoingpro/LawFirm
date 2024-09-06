@@ -1,426 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>伊藤昌紘税理士事務所</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <header class="flex items-center p-6">
-      <h1 class="text-2xl font-bold">伊藤昌紘税理士事務所</h1>
-    </header>
-    <main>
-      <section class="hero flex items-center max-[784px]:px-6 px-16" id="hero">
-        <div class="hero__inner">
-          <div class="hero-headline grid gap-4 text-white">
-            <h3 class="text-4xl max-[784px]:text-3xl">
-              大阪から顧問弁護士として、あなたの未来を照らす。
-            </h3>
-            <h1
-              class="text-6xl max-[784px]:text-4xl font-bold leading-[115%] tracking-widest"
-            >
-              BRIGHTEN<br />YOUR FUTURE.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>伊藤昌紘税理士事務所</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="flex items-center p-6">
+    <h1 class="text-2xl font-bold">伊藤昌紘税理士事務所</h1>
+  </header>
+  <main>
+    <section class="hero flex items-center px-16 max-[784px]:px-6" id="hero">
+      <div class="hero__inner">
+        <div class="hero-headline grid gap-4 text-white">
+          <h3 class="text-4xl max-[784px]:text-3xl">
+            大阪から顧問弁護士として、あなたの未来を照らす。
+          </h3>
+          <h1 class="text-6xl max-[784px]:text-4xl font-bold leading-[115%] tracking-widest">
+            BRIGHTEN<br />YOUR FUTURE.
+          </h1>
+        </div>
+      </div>
+    </section>
+    <section class="mission flex place-content-center pt-20">
+      <div class="mission__inner grid gap-8">
+        <div class="section-title mx-auto">
+          <div class="section-title-wrapper relative">
+            <p class="absolute top-6 left-16 text-[#474747]">事務所概要</p>
+            <h1 class="text-[40px] font-semibold text-[#4BA3D6] tracking-widest">
+              <span class="text-[77px] font-semibold">M</span>ISSION
             </h1>
           </div>
         </div>
-      </section>
-      <section class="mission flex place-content-center pt-20">
-        <div class="mission__inner grid gap-8">
-          <div class="section-title flex justify-center">
-            <div class="section-title-wrapper relative">
-              <p class="absolute top-6 left-16 text-[#474747]">事務所概要</p>
-              <h1
-                class="text-[40px] font-semibold text-[#4BA3D6] tracking-widest"
-              >
-                <span class="text-[77px] font-semibold">M</span>ISSION
-              </h1>
-            </div>
-          </div>
 
-          <div
-            class="mission-office w-[100vw] grid relative grid-cols-2 max-[784px]:grid-cols-1 items-end"
-          >
-            <img
-              src="./img/mission-offie.png"
-              class="h-[290px] max-[784px]:h-auto max-[784px]:w-[90%] w-full object-cover object-center"
-              alt
-            />
-            <img
-              src="./img/slogan.png"
-              class="-translate-x-[27.4%] max-[784px]:translate-x-0 max-w-[550px] max-[784px]:w-[50%] w-full h-auto z-10"
-              alt
-            /><img
-              src="./img/japanese-map.png"
-              class="object-cover object-center w-[50%] absolute right-0 top-0"
-              alt
-            />
-          </div>
-
-          <div
-            class="mission-content flex justify-center max-[784px]:px-6 px-8 pt-8"
-          >
-            <div
-              class="mission-content-wrapper max-w-[1130px] w-full grid gap-8"
-            >
-              <h3
-                class="text-[#333333] text-3xl max-[784px]:text-2xl leading-[44px]"
-              >
-                あなたの未来を照らす。ブライトは、<br
-                  class="min-[784px]:block hidden"
-                />
-                あなたの笑顔を守るために、最大限のサポートを約束します。
-              </h3>
-              <p class="text-[#969696] text-sm leading-[28px]">
-                「人生100年時代」が叫ばれる現代において、誰しもが、一生の間に一度は「法の力」を頼ることになるでしょう。<br
-                  class="min-[784px]:block hidden"
-                />
-                我々は、皆様が「法の支配」により、安心して暮らし、安全に企業活動を送ることのできる未来を目指しています。<br
-                  class="min-[784px]:block hidden"
-                />
-                そのためには、世界中のより多くの「あなた」に、最上のリーガルサービスを届けたいと考えています。<br
-                  class="min-[784px]:block hidden"
-                />
-                我々は、高度の専門性を幅広く備えており、社会インフラとしての役割を意識しています。
-              </p>
-            </div>
-          </div>
+        <div class="mission-office w-[100vw] grid items-end grid-cols-2 max-[784px]:grid-cols-1 relative">
+          <img src="./img/mission-offie.png"
+            class="h-[290px] max-[784px]:h-auto w-full max-[784px]:w-[90%] object-cover object-center" alt />
+          <img src="./img/slogan.png"
+            class="-translate-x-[27.4%] max-[784px]:translate-x-0 max-w-[550px] max-[784px]:w-[50%] w-full h-auto z-10"
+            alt /><img src="./img/japanese-map.png" class="object-cover object-center w-[50%] absolute right-0 top-0"
+            alt />
         </div>
-      </section>
-      <section
-        class="service flex flex-col items-center relative pt-20 max-[784px]:px-6 px-8"
-      >
-        <div class="service__inner grid gap-2 w-full max-w-[1130px]">
-          <div class="section-title">
-            <div class="section-title-wrapper relative">
-              <p class="absolute top-6 left-12 text-[#474747]">取扱業務</p>
-              <h1
-                class="text-[40px] font-semibold text-[#4BA3D6] tracking-widest"
-              >
-                <span class="text-[77px]">S</span>ERVICE
-              </h1>
-            </div>
-          </div>
 
-          <div class="service-content grid gap-8">
-            <h3
-              class="text-[#333333] text-3xl max-[784px]:text-2xl leading-[44px]"
-            >
-              法人向け・個人向けを問わず、<br
-                class="min-[784px]:block hidden"
-              />高度の専門性を有する業務分野を幅広く取り扱っています。
+        <div class="mission-content flex justify-center px-8 max-[784px]:px-6 pt-8">
+          <div class="mission-content-wrapper max-w-[1130px] w-full grid gap-8">
+            <h3 class="text-[#333333] text-3xl max-[784px]:text-2xl leading-[44px]">
+              あなたの未来を照らす。ブライトは、<br class="min-[784px]:block hidden" />
+              あなたの笑顔を守るために、最大限のサポートを約束します。
             </h3>
             <p class="text-[#969696] text-sm leading-[28px]">
-              所内には、企業法務部、倒産事件部、労災事故部、交通事故部等、様々な専門部が存在し、日々、専門性を磨いています。<br
-                class="min-[784px]:block hidden"
-              />
-              法人向けとしては、法律顧問・顧問サービス、経営権紛争、M&A・事業承継、私的整理・破産・民事再生等、契約交渉・契約書作成等、<br
-                class="min-[784px]:block hidden"
-              />
-              売掛金等の債権保全・回収、経営相談、訴訟等の裁判手続対応、従業員等に関する対応、IT関連のご相談、不動産を巡るトラブルなど、<br
-                class="min-[784px]:block hidden"
-              />
-              個人向けとしては、交通事故・労災事故を中心とした損害賠償請求事件、債務整理・破産・再生等、<br
-                class="min-[784px]:block hidden"
-              />
-              相続、離婚・財産分与等、財産管理等に関する対応、不動産の明渡し等を巡る問題などが挙げられます。
+              「人生100年時代」が叫ばれる現代において、誰しもが、一生の間に一度は「法の力」を頼ることになるでしょう。<br class="min-[784px]:block hidden" />
+              我々は、皆様が「法の支配」により、安心して暮らし、安全に企業活動を送ることのできる未来を目指しています。<br class="min-[784px]:block hidden" />
+              そのためには、世界中のより多くの「あなた」に、最上のリーガルサービスを届けたいと考えています。<br class="min-[784px]:block hidden" />
+              我々は、高度の専門性を幅広く備えており、社会インフラとしての役割を意識しています。
             </p>
-          </div>
-
-          <ul
-            class="service-options md:flex gap-8 grid py-20 w-full text-white"
-          >
-            <li
-              class="service-option relative w-full h-[250px] max-[784px]:h-[200px] group bg-red-500"
-            >
-              <img
-                src="./img/all-companies.png"
-                alt
-                class="w-full h-full object-center object-cover"
-              />
-              <span
-                class="absolute inset-0 bg-[rgba(00,00,00,0.4)] transition-transform duration-500 origin-right transform group-hover:scale-x-0"
-              ></span>
-              <button class="absolute inset-0 flex items-center justify-center">
-                <p class="text-center">企業（法人）・個人事業主の皆様</p>
-                <p
-                  class="tracking-widest text-[10px] absolute bottom-8 right-8 font-bold"
-                >
-                  MORE →
-                </p>
-              </button>
-            </li>
-
-            <li
-              class="service-option relative w-full h-[250px] max-[784px]:h-[200px] group"
-            >
-              <img
-                src="./img/individuals.png"
-                alt
-                class="w-full h-full object-center object-cover"
-              />
-              <span
-                class="absolute inset-0 bg-[rgba(00,00,00,0.4)] transition-transform duration-500 origin-right transform group-hover:scale-x-0"
-              ></span>
-              <button class="absolute inset-0 flex items-center justify-center">
-                <p class="text-center">個人の皆様</p>
-                <p
-                  class="tracking-widest text-[10px] absolute bottom-8 right-8 font-bold"
-                >
-                  MORE →
-                </p>
-              </button>
-            </li>
-
-            <li
-              class="service-option relative w-full h-[250px] max-[784px]:h-[200px] group"
-            >
-              <img
-                src="./img/industry.png"
-                alt
-                class="w-full h-full object-center object-cover"
-              />
-              <span
-                class="absolute inset-0 bg-[rgba(00,00,00,0.4)] transition-transform duration-500 origin-right transform group-hover:scale-x-0"
-              ></span>
-              <button class="absolute inset-0 flex items-center justify-center">
-                <p class="text-center">業種別</p>
-                <p
-                  class="tracking-widest text-[10px] absolute bottom-8 right-8 font-bold"
-                >
-                  MORE →
-                </p>
-              </button>
-            </li>
-          </ul>
-        </div>
-        <span
-          class="w-full max-[784px]:h-[50%] h-[30%] z-[-1] absolute bg-[#4BA3D6] bottom-0"
-        ></span>
-      </section>
-      <section class="contact flex justify-center py-20 max-[784px]:px-6 px-8">
-        <div class="contact__inner grid gap-2 w-full max-w-[1130px]">
-          <div class="section-title flex justify-center">
-            <div class="section-title-wrapper relative">
-              <p class="absolute top-6 left-12 text-[#474747]">お問い合わせ</p>
-              <h1
-                class="text-[40px] font-semibold text-[#4BA3D6] tracking-widest"
-              >
-                <span class="text-[77px] font-semibold">C</span>ONTACT
-              </h1>
-            </div>
-          </div>
-          <form
-            class="contact-form py-16 px-24 max-[784px]:px-6 grid gap-8 border border-[#4BA3D6] bg-[#f2f2f2]"
-          >
-            <div class="grid gap-4">
-              <label for="name" class="block text-sm text-gray-700 mb-1">
-                <span
-                  class="required-label bg-red-600 text-white px-2 py-1 mr-2"
-                  >必須</span
-                >
-                名前
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="w-full px-3 py-2 border border-gray-300"
-                required
-              />
-            </div>
-
-            <div class="grid gap-4">
-              <label for="kana" class="block text-sm text-gray-700 mb-1">
-                <span
-                  class="required-label bg-red-600 text-white px-2 py-1 mr-2"
-                  >必須</span
-                >
-                かな
-              </label>
-              <input
-                type="text"
-                id="kana"
-                name="kana"
-                class="w-full px-3 py-2 border border-gray-300"
-                required
-              />
-            </div>
-
-            <div class="grid gap-4">
-              <label for="industry" class="block text-sm text-gray-700 mb-1">
-                <span
-                  class="required-label bg-red-600 text-white px-2 py-1 mr-2"
-                  >必須</span
-                >
-                業種
-              </label>
-              <input
-                type="text"
-                id="industry"
-                name="industry"
-                class="w-full px-3 py-2 border border-gray-300"
-                required
-              />
-            </div>
-
-            <div class="grid gap-4">
-              <label for="phone" class="block text-sm text-gray-700 mb-1">
-                <span
-                  class="required-label bg-red-600 text-white px-2 py-1 mr-2"
-                  >必須</span
-                >
-                電話番号
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                class="w-full px-3 py-2 border border-gray-300"
-                required
-              />
-            </div>
-
-            <div class="grid gap-4">
-              <label for="email" class="block text-sm text-gray-700 mb-1">
-                <span
-                  class="required-label bg-red-600 text-white px-2 py-1 mr-2"
-                  >必須</span
-                >
-                メールアドレス
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="w-full px-3 py-2 border border-gray-300"
-                required
-              />
-            </div>
-
-            <div class="grid gap-4">
-              <label for="inquiry" class="block text-sm text-gray-700 mb-1">
-                <span
-                  class="required-label bg-red-600 text-white px-2 py-1 mr-2"
-                  >必須</span
-                >
-                問い合わせ内容
-              </label>
-              <textarea
-                id="inquiry"
-                name="inquiry"
-                rows="5"
-                class="w-full px-3 py-2 border border-gray-300"
-                required
-              ></textarea>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer
-      class="footer flex flex-col items-center relative py-20 max-[784px]:px-6 px-8"
-    >
-      <div
-        class="footer__inner grid grid-cols-[auto_auto_auto] max-[784px]:grid-cols-1  gap-8 w-full max-w-[1130px]"
-      >
-        <div class="flex flex-col max-[784px]:items-center gap-4 max-[784px]:order-3">
-          <h1 class="text-2xl font-bold">伊藤昌紘税理士事務所</h1>
-          <ul class="text-xs text-[#727272] leading-[25px]">
-            <li>
-              〒530-0057<br />
-              大阪市北区曽根崎2丁目6番6号<br />
-              コウヅキキャピタルウエスト12階
-            </li>
-            <li>
-              <a href="#" class="font-bold text-[#4BA3D6]">Google Map</a><br />
-              TEL. 06-4965-9590<br />
-              FAX. 06-6366-8771
-            </li>
-          </ul>
-          <p class="text-xs text-[#727272] leading-[25px] max-[784px]:text-center">
-            <a href="#">PRIVACY POLICY</a><br />
-            © 2020 弁護士法人 ブライト.
-          </p>
-        </div>
-        <div class="max-[784px]:order-1 flex justify-center">
-          <ul class="grid gap-4 max-[784px]:gap-x-16 max-[784px]:grid-cols-2 text-sm">
-            <li><a href="#">事務所概要</a></li>
-            <li><a href="#">選ばれる理由</a></li>
-            <li><a href="#">基礎知識</a></li>
-            <li><a href="#">弁護士等紹介</a></li>
-            <li><a href="#">よくある質問</a></li>
-            <li><a href="#">採用情報</a></li>
-            <li><a href="#">アクセス</a></li>
-            <li><a href="#">お知らせ</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-          </ul>
-        </div>
-        <div class="grid gap-4 max-[784px]:order-2">
-          <div class="grid grid-cols-[auto_1fr] gap-2 items-center">
-            <h1>取扱業務</h1>
-            <span class="w-full h-[1px] bg-gray-500"></span>
-          </div>
-          <div
-            class="grid grid-cols-[auto_auto_auto] max-[784px]:grid-cols-[auto_auto] gap-8 text-[#727272]"
-          >
-            <div class="flex flex-col gap-4">
-              <h3 class="text-sm">
-                <a href="#">企業（法人）・個人事業主の皆様</a>
-              </h3>
-              <ul class="text-[10px] grid gap-4">
-                <li><a href="#">- 顧問弁護士（みんなの法務部）</a></li>
-                <li><a href="#">- 経営権紛争</a></li>
-                <li><a href="#">- M&Ａ・事業承継</a></li>
-                <li><a href="#">- 会社破産・民事再生（法人倒産）</a></li>
-                <li><a href="#">- 契約交渉・契約書作成等</a></li>
-                <li><a href="#">- 売掛金等の債権保全・回収</a></li>
-                <li><a href="#">- 経営相談</a></li>
-                <li><a href="#">- 訴訟等の裁判手続対応</a></li>
-                <li><a href="#">- 従業員等に関する対応</a></li>
-                <li><a href="#">- IT・インターネット関連のご相談</a></li>
-                <li><a href="#">- 不動産を巡るトラブル</a></li>
-              </ul>
-            </div>
-            <div class="flex flex-col gap-4">
-              <h3 class="text-sm"><a href="#">個人の皆様</a></h3>
-              <ul class="text-[10px] grid gap-4">
-                <li><a href="#">- 労災事故</a></li>
-                <li><a href="#">- 交通事故</a></li>
-                <li><a href="#">- 相続（遺言作成・遺産分割等）</a></li>
-                <li><a href="#">- 債務整理・破産・個人再生等（倒産）</a></li>
-                <li><a href="#">- 労務（解雇・未払残業代等）</a></li>
-                <li><a href="#">- 離婚・財産分与等</a></li>
-                <li><a href="#">- 財産管理等に関する対応</a></li>
-                <li><a href="#">- 不動産の明渡し等を巡る問題</a></li>
-                <li>
-                  <a href="#"
-                    >- ＩＴ・インターネット関連（削除請求等）のご相談</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="flex flex-col gap-4">
-              <h3 class="text-sm"><a href="#">業種別</a></h3>
-              <ul class="text-[10px] grid gap-4">
-                <li><a href="#">- ホテル・民泊業界専門</a></li>
-                <li><a href="#">- EC業界専門</a></li>
-                <li><a href="#">- 不動産業界専門</a></li>
-                <li><a href="#">- 建築業界専門</a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="service flex flex-col items-center pt-20 px-8 max-[784px]:px-6 relative">
+      <div class="service__inner grid gap-2 w-full max-w-[1130px]">
+        <div class="section-title">
+          <div class="section-title-wrapper relative">
+            <p class="absolute top-6 left-12 text-[#474747]">取扱業務</p>
+            <h1 class="text-[40px] font-semibold text-[#4BA3D6] tracking-widest">
+              <span class="text-[77px]">S</span>ERVICE
+            </h1>
+          </div>
+        </div>
 
-      <a
-        href="#hero"
-        class="flex place-content-center text-center bg-[#4BA3D6] hover:bg-[#75b8df] text-white tracking-widest text-sm font-semibold w-full absolute bottom-0 gap-2 py-3"
-        ><p>TOP</p>
-        <img src="./img/chevron-up.png" class="w-4 h-auto"
-      /></a>
-    </footer>
-  </body>
+        <div class="service-content grid gap-8">
+          <h3 class="text-[#333333] text-3xl max-[784px]:text-2xl leading-[44px]">
+            法人向け・個人向けを問わず、<br class="min-[784px]:block hidden" />高度の専門性を有する業務分野を幅広く取り扱っています。
+          </h3>
+          <p class="text-[#969696] text-sm leading-[28px]">
+            所内には、企業法務部、倒産事件部、労災事故部、交通事故部等、様々な専門部が存在し、日々、専門性を磨いています。<br class="min-[784px]:block hidden" />
+            法人向けとしては、法律顧問・顧問サービス、経営権紛争、M&A・事業承継、私的整理・破産・民事再生等、契約交渉・契約書作成等、<br class="min-[784px]:block hidden" />
+            売掛金等の債権保全・回収、経営相談、訴訟等の裁判手続対応、従業員等に関する対応、IT関連のご相談、不動産を巡るトラブルなど、<br class="min-[784px]:block hidden" />
+            個人向けとしては、交通事故・労災事故を中心とした損害賠償請求事件、債務整理・破産・再生等、<br class="min-[784px]:block hidden" />
+            相続、離婚・財産分与等、財産管理等に関する対応、不動産の明渡し等を巡る問題などが挙げられます。
+          </p>
+        </div>
+
+        <ul class="service-options flex max-[784px]:grid gap-8 py-20 w-full text-white">
+          <li class="service-option w-full h-[250px] max-[784px]:h-[200px] relative group bg-red-500">
+            <img src="./img/all-companies.png" alt class="w-full h-full object-center object-cover" />
+            <span
+              class="absolute inset-0 bg-[rgba(00,00,00,0.4)] transition-transform duration-500 origin-right transform group-hover:scale-x-0"></span>
+            <button class="absolute inset-0 flex items-center justify-center">
+              <p class="text-center">企業（法人）・個人事業主の皆様</p>
+              <p class="tracking-widest text-[10px] absolute bottom-8 right-8 font-bold">
+                MORE →
+              </p>
+            </button>
+          </li>
+
+          <li class="service-option w-full h-[250px] max-[784px]:h-[200px] relative group">
+            <img src="./img/individuals.png" alt class="w-full h-full object-center object-cover" />
+            <span
+              class="absolute inset-0 bg-[rgba(00,00,00,0.4)] transition-transform duration-500 origin-right transform group-hover:scale-x-0"></span>
+            <button class="absolute inset-0 flex items-center justify-center">
+              <p class="text-center">個人の皆様</p>
+              <p class="tracking-widest text-[10px] absolute bottom-8 right-8 font-bold">
+                MORE →
+              </p>
+            </button>
+          </li>
+
+          <li class="service-option w-full h-[250px] max-[784px]:h-[200px] relative group">
+            <img src="./img/industry.png" alt class="w-full h-full object-center object-cover" />
+            <span
+              class="absolute inset-0 bg-[rgba(00,00,00,0.4)] transition-transform duration-500 origin-right transform group-hover:scale-x-0"></span>
+            <button class="absolute inset-0 flex items-center justify-center">
+              <p class="text-center">業種別</p>
+              <p class="tracking-widest text-[10px] absolute bottom-8 right-8 font-bold">
+                MORE →
+              </p>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <span class="w-full h-[30%] max-[784px]:h-[50%] z-[-1] absolute bg-[#4BA3D6] bottom-0"></span>
+    </section>
+    <section class="contact flex justify-center py-20 px-8 max-[784px]:px-6">
+      <div class="contact__inner grid gap-2 w-full max-w-[1130px]">
+        <div class="section-title flex justify-center">
+          <div class="section-title-wrapper relative">
+            <p class="absolute top-6 left-12 text-[#474747]">お問い合わせ</p>
+            <h1 class="text-[40px] font-semibold text-[#4BA3D6] tracking-widest">
+              <span class="text-[77px] font-semibold">C</span>ONTACT
+            </h1>
+          </div>
+        </div>
+        <form class="contact-form grid gap-8 py-16 px-24 max-[784px]:px-6 border border-[#4BA3D6] bg-white">
+          <div class="grid gap-4">
+            <label for="name" class="block text-sm text-gray-700 mb-1">
+              <span class="required-label bg-[#A24361] text-white px-2 py-1 mr-2">必須</span>
+              名前
+            </label>
+            <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-400" required />
+          </div>
+
+          <div class="grid gap-4">
+            <label for="kana" class="block text-sm text-gray-700 mb-1">
+              <span class="required-label bg-[#A24361] text-white px-2 py-1 mr-2">必須</span>
+              かな
+            </label>
+            <input type="text" id="kana" name="kana" class="w-full px-3 py-2 border border-gray-400" required />
+          </div>
+
+          <div class="grid gap-4">
+            <label for="industry" class="block text-sm text-gray-700 mb-1">
+              <span class="required-label bg-[#A24361] text-white px-2 py-1 mr-2">必須</span>
+              業種
+            </label>
+            <input type="text" id="industry" name="industry" class="w-full px-3 py-2 border border-gray-400" required />
+          </div>
+
+          <div class="grid gap-4">
+            <label for="phone" class="block text-sm text-gray-700 mb-1">
+              <span class="required-label bg-[#A24361] text-white px-2 py-1 mr-2">必須</span>
+              電話番号
+            </label>
+            <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-400" required />
+          </div>
+
+          <div class="grid gap-4">
+            <label for="email" class="block text-sm text-gray-700 mb-1">
+              <span class="required-label bg-[#A24361] text-white px-2 py-1 mr-2">必須</span>
+              メールアドレス
+            </label>
+            <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-400" required />
+          </div>
+
+          <div class="grid gap-4">
+            <label for="inquiry" class="block text-sm text-gray-700 mb-1">
+              <span class="required-label bg-[#A24361] text-white px-2 py-1 mr-2">必須</span>
+              問い合わせ内容
+            </label>
+            <textarea id="inquiry" name="inquiry" rows="5" class="w-full px-3 py-2 border border-gray-400"
+              required></textarea>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer flex flex-col items-center py-28 px-8 max-[784px]:px-6 relative">
+    <div class="footer__inner grid grid-cols-[auto_auto_1fr] max-[784px]:grid-cols-1 gap-16 w-full max-w-[1130px]">
+      <div class="flex flex-col max-[784px]:items-center gap-4 max-[784px]:order-3">
+        <h1 class="text-2xl font-bold">伊藤昌紘税理士事務所</h1>
+        <ul class="text-xs text-[#727272] leading-[25px]">
+          <li>
+            〒530-0057<br />
+            大阪市北区曽根崎2丁目6番6号<br />
+            コウヅキキャピタルウエスト12階
+          </li>
+          <li>
+            <a href="#" class="font-bold text-[#4BA3D6]">Google Map</a><br />
+            TEL. 06-4965-9590<br />
+            FAX. 06-6366-8771
+          </li>
+        </ul>
+        <p class="text-xs text-[#727272] leading-[25px] max-[784px]:text-center">
+          <a href="#">PRIVACY POLICY</a><br />
+          © 2020 弁護士法人 ブライト.
+        </p>
+      </div>
+      <div class="max-[784px]:order-1 flex justify-center">
+        <ul class="text-sm grid gap-4 max-[784px]:gap-x-16 max-[784px]:grid-cols-2">
+          <li><a href="#">事務所概要</a></li>
+          <li><a href="#">選ばれる理由</a></li>
+          <li><a href="#">基礎知識</a></li>
+          <li><a href="#">弁護士等紹介</a></li>
+          <li><a href="#">よくある質問</a></li>
+          <li><a href="#">採用情報</a></li>
+          <li><a href="#">アクセス</a></li>
+          <li><a href="#">お知らせ</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="max-[784px]:order-2 grid gap-4">
+        <div class="grid grid-cols-[auto_1fr] gap-2 items-center">
+          <h1>取扱業務</h1>
+          <span class="w-full h-[1px] bg-gray-500"></span>
+        </div>
+        <div class="grid grid-cols-[auto_auto_auto] max-[784px]:grid-cols-[auto_auto] gap-8 text-[#727272]">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-sm">
+              <a href="#">企業（法人）・個人事業主の皆様</a>
+            </h3>
+            <ul class="text-[10px] grid gap-4">
+              <li><a href="#">- 顧問弁護士（みんなの法務部）</a></li>
+              <li><a href="#">- 経営権紛争</a></li>
+              <li><a href="#">- M&Ａ・事業承継</a></li>
+              <li><a href="#">- 会社破産・民事再生（法人倒産）</a></li>
+              <li><a href="#">- 契約交渉・契約書作成等</a></li>
+              <li><a href="#">- 売掛金等の債権保全・回収</a></li>
+              <li><a href="#">- 経営相談</a></li>
+              <li><a href="#">- 訴訟等の裁判手続対応</a></li>
+              <li><a href="#">- 従業員等に関する対応</a></li>
+              <li><a href="#">- IT・インターネット関連のご相談</a></li>
+              <li><a href="#">- 不動産を巡るトラブル</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3 class="text-sm"><a href="#">個人の皆様</a></h3>
+            <ul class="text-[10px] grid gap-4">
+              <li><a href="#">- 労災事故</a></li>
+              <li><a href="#">- 交通事故</a></li>
+              <li><a href="#">- 相続（遺言作成・遺産分割等）</a></li>
+              <li><a href="#">- 債務整理・破産・個人再生等（倒産）</a></li>
+              <li><a href="#">- 労務（解雇・未払残業代等）</a></li>
+              <li><a href="#">- 離婚・財産分与等</a></li>
+              <li><a href="#">- 財産管理等に関する対応</a></li>
+              <li><a href="#">- 不動産の明渡し等を巡る問題</a></li>
+              <li>
+                <a href="#">- ＩＴ・インターネット関連（削除請求等）のご相談</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h3 class="text-sm"><a href="#">業種別</a></h3>
+            <ul class="text-[10px] grid gap-4">
+              <li><a href="#">- ホテル・民泊業界専門</a></li>
+              <li><a href="#">- EC業界専門</a></li>
+              <li><a href="#">- 不動産業界専門</a></li>
+              <li><a href="#">- 建築業界専門</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#hero"
+      class="text-sm text-center font-semibold text-white tracking-widest flex gap-2 py-3 place-content-center bg-[#4BA3D6] hover:bg-[#75b8df] w-full absolute bottom-0">
+      <p>TOP</p>
+      <img src="./img/chevron-up.png" class="w-4 h-auto" />
+    </a>
+  </footer>
+</body>
+
 </html>
