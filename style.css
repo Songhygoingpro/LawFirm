@@ -12,7 +12,6 @@ body {
 
 main {
   position: relative;
-  z-index: 1;
 }
 
 main::before {
@@ -48,11 +47,9 @@ textarea:focus {
 }
 
 #burger-menu {
-  cursor: pointer;
   width: 30px;
   height: 25px;
   position: relative;
-  z-index: 3;
   display: none;
 }
 
@@ -90,13 +87,9 @@ textarea:focus {
   }
 
   .nav-menu ul {
-    padding: 0 3rem;
+    padding: 0 2rem;
     flex-direction: column;
     gap: 0.5rem;
-  }
-
-  .nav-menu li {
-    padding: 0;
   }
 
   .nav-menu li a {
@@ -157,15 +150,11 @@ textarea:focus {
   background-color: #2c8bc2;
   top: 0;
   border-radius: 50%;
-  z-index: 1;
 }
 
 @media (max-width: 784px) {
   .timeline .container {
     font-size: 16px;
-  }
-
-  .timeline .container {
     gap: 7rem;
   }
 
