@@ -10,8 +10,96 @@ body {
   overflow-x: hidden;
 }
 
+.nav-menu {
+  display: block;
+  position: static;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#burger-menu {
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: 3;
+  display: none;
+}
+
+#burger-menu span {
+  background-color: #333;
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 784px) {
+
+  #burger-menu {
+    display: block;
+  }
+
+  .nav-menu {
+    background-color: white;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+    padding-top: 20px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+
+  .nav-menu.show {
+    opacity: 1;
+    height: 100%;
+  }
+
+  .nav-menu ul {
+    padding: 0 3rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-menu li {
+    padding: 0;
+  }
+
+  .nav-menu li a{
+    display: block;
+    padding: 10px 0;
+    background-color: #7dcbf8;
+  }
+
+  .nav-menu li a:hover {
+    background-color: #ace0ff;
+  }
+
+
+}
+
+#burger-menu.active span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+#burger-menu.active span:nth-child(2) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+
 main {
   position: relative;
+  z-index: 1;
 }
 
 main::before {
@@ -45,33 +133,60 @@ input,textarea:focus {
   gap:3rem;
 }
 
-/* Vertical line */
 .timeline::before {
   content: '';
   position: absolute;
   width: 1px;
-  background-color: #007bff;
+  background-color: #2C8BC2;
   top: 0;
   height: 110%;
-  left: 165px;
+  left: 235px;
 }
 
 .timeline .container {
   display: grid;
   position: relative;
   grid-template-columns: auto 1fr;
-  gap: 8rem;
+  gap: 13rem;
+  font-size: 20px;
 }
 
-/* The circles on the timeline */
+.timeline .date {
+  color: #2C8BC2;
+}
+
 .timeline .container::before {
   content: '';
   position: absolute;
   width: 15px;
   height: 15px;
-  left: 158px; /* Align with the vertical line */
-  background-color: #007bff;
+  left: 228px;
+  background-color: #2C8BC2;
   top: 0;
   border-radius: 50%;
   z-index: 1;
 }
+
+@media (max-width: 784px) {
+
+.timeline .container {
+  font-size: 16px;
+}
+
+.timeline .container {
+  gap:7rem;
+}
+
+.timeline::before {
+
+  left: 155px;
+
+}
+
+.timeline .container::before {
+
+  left: 148px;
+
+}
+}
+
