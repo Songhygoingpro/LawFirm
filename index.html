@@ -22,10 +22,10 @@
       <!-- Navigation Menu -->
       <nav id="menu" class="nav-menu">
         <ul class="text-sm">
-          <li><a href="#hero">経歴</a></li>
-          <li><a href="#service">お問い合わせ</a></li>
-          <li><a href="#career">理念</a></li>
-          <li><a href="#contact">サービス内容</a></li>
+          <li><a href="#hero">理念</a></li>
+          <li><a href="#service">サービス内容</a></li>
+          <li><a href="#career">経歴</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
         </ul>
       </nav>
     </div>
@@ -46,7 +46,7 @@
       id="service">
       <div class="service__inner grid gap-4">
         <div class="section-title mx-auto relative">
-          <p class="absolute top-6 left-12 text-[#474747]">取扱業務</p>
+          <p class="absolute top-6 left-12 text-[#474747]">サービス内容</p>
           <h1 class="text-[40px] font-semibold text-[#4BA3D6] tracking-widest">
             <span class="text-[77px]">S</span>ERVICE
           </h1>
@@ -255,10 +255,10 @@
       </div>
       <div class="max-[784px]:order-2 flex justify-center">
         <ul class="text-sm flex flex-col gap-4">
-          <li><a href="#">理念</a></li>
-          <li><a href="#">サービス内容</a></li>
-          <li><a href="#">経歴</a></li>
-          <li><a href="#">お問い合わせ</a></li>
+          <li><a href="#hero">理念</a></li>
+          <li><a href="#service">サービス内容</a></li>
+          <li><a href="#career">経歴</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
         </ul>
       </div>
       <div class="max-[784px]:order-1 grid gap-4">
@@ -287,7 +287,6 @@
       });
 
       const nav_items = document.querySelectorAll('.nav-menu li a');
-
       nav_items.forEach(nav_item => {
         nav_item.addEventListener('click', function () {
           burgerMenu.classList.toggle("active");
@@ -295,9 +294,7 @@
         });
       });
 
-
-
-      /*Back-to-top*/
+      /*Back-to-top button*/
       const backToTopButton = document.getElementById("backToTop");
       backToTopButton.onclick = function () {
         window.scrollTo({
