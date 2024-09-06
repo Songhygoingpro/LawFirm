@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block: 120px;
+}
+
 body {
   font-family: "Catamaran", sans-serif;
   background-color: #f2f2f2;
