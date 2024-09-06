@@ -42,7 +42,7 @@
       </div>
     </section>
     <section
-      class="service flex flex-col items-center pt-20 px-8 max-[784px]:px-4 relative after::content-[''] after:w-full after:absolute after:h-[40%] after:bottom-[-1rem] after:bg-[#4BA3D6] after:z-[-1] after:max-[784px]:h-[55%]">
+      class="service flex flex-col items-center pt-20 px-8 max-[784px]:px-4 relative after::content-[''] after:w-full after:absolute after:h-[40%] after:max-[784px]:h-[1580px] after:bottom-[-1rem] after:bg-[#4BA3D6] after:z-[-1]">
       <div class="service__inner grid gap-4">
         <div class="section-title mx-auto relative">
           <p class="absolute top-6 left-12 text-[#474747]">取扱業務</p>
@@ -80,7 +80,7 @@
             </div>
             <ul
               class="service-options grid max-[784px]:grid grid-cols-3 max-[784px]:grid-cols-1 gap-8 py-20 w-full text-white">
-              <li class="service-option w-full h-[250px] max-[784px]:h-[200px] relative group bg-red-500">
+              <li class="service-option w-full h-[250px] max-[784px]:h-[200px] relative group ">
                 <img src="./img/taxation.png" alt class="w-full h-full object-center object-cover" />
                 <span
                   class="absolute inset-0 bg-[rgba(00,00,00,0.4)] transition-transform duration-500 origin-right transform group-hover:scale-x-0"></span>
@@ -251,7 +251,6 @@
           © 2024 伊藤昌紘税理士事務所<br /><a class="text-[#727272]"
             href="https://itou-group.shop-pro.jp/">https://itou-group.shop-pro.jp/</a>
         </p>
-
       </div>
       <div class="max-[784px]:order-2 flex justify-center">
         <ul class="text-sm flex flex-col gap-4">
@@ -269,11 +268,11 @@
       </div>
     </div>
 
-    <a href="#hero"
+    <button id="backToTop"
       class="text-sm text-center font-semibold text-white tracking-widest flex gap-2 py-3 place-content-center bg-[#4BA3D6] hover:bg-[#75b8df] w-full absolute bottom-0">
       <p>TOP</p>
       <img src="./img/chevron-up.png" class="w-4 h-auto" />
-    </a>
+    </button>
   </footer>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -285,6 +284,14 @@
         navMenu.classList.toggle("show");
       });
     });
+
+    const backToTopButton = document.getElementById("backToTop");
+    backToTopButton.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
   </script>
 </body>
