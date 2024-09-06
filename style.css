@@ -33,26 +33,3 @@ main::before {
   width: 100%;
   height: calc(100vh - 72px);
 }
-
-.section-title-wrapper {
-position: relative;
-display: flex;
-}
-
-.section-title-wrapper p {
-    position: absolute;
-    top:1.5rem;
-    left: 4rem;
-    color: #474747;
-}
-
-.section-title-wrapper h1 {
-    font-size: 40px;
-    font-weight: 600 ;
-    color: #4BA3D6;
-    letter-spacing: 5px;
-}
-
-.section-title-wrapper h1 span {
-    font-size: 77px;
-}
