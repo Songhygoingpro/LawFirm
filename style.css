@@ -37,3 +37,41 @@ main::before {
 input,textarea:focus {
   outline: none;
 }
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  gap:3rem;
+}
+
+/* Vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: #007bff;
+  top: 0;
+  height: 110%;
+  left: 165px;
+}
+
+.timeline .container {
+  display: grid;
+  position: relative;
+  grid-template-columns: auto 1fr;
+  gap: 8rem;
+}
+
+/* The circles on the timeline */
+.timeline .container::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 158px; /* Align with the vertical line */
+  background-color: #007bff;
+  top: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
